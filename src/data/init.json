@@ -1,0 +1,21 @@
+[
+  {
+    "type": "folder",
+    "name": "src",
+    "data": [
+      {
+        "type": "folder",
+        "name": "components",
+        "data": []
+      },
+      {
+        "type": "file",
+        "name": "main.ts"
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "name": "index.html"
+  }
+]
