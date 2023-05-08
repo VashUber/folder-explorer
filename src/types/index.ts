@@ -9,4 +9,4 @@ export interface FolderI {
   data: (FolderI | FileI)[];
 }
 
-export type ExplorerT = (FolderI | FileI)[];
+export type FolderStructureT = (FolderI | FileI)[];

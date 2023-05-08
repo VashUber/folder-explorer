@@ -6,7 +6,18 @@
       {
         "type": "folder",
         "name": "components",
-        "data": []
+        "data": [
+          {
+            "type": "folder",
+            "name": "ui-kit",
+            "data": [
+              {
+                "type": "file",
+                "name": "button.tsx"
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "file",
