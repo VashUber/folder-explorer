@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
 import initial from "~/data/init.json";
-import { FolderStructureT } from "~/types";
+import { FileI, FolderI, FolderStructureT } from "~/types";
 
 const fs = initial as FolderStructureT;
 
@@ -9,6 +9,10 @@ class FolderStructure {
 
   constructor() {
     makeAutoObservable(this);
+  }
+
+  addToFs(node: FolderI, val: FolderI | FileI) {
+    node.data.push(val);
   }
 }
 
