@@ -7,7 +7,7 @@ type FilePropsT = {
 export const File = ({ name }: FilePropsT) => {
   return (
     <div className="flex items-center gap-1">
-      <FileIcon></FileIcon>
+      <FileIcon />
       {name}
     </div>
   );

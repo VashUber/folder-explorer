@@ -1,19 +1,16 @@
-import { FolderStructureT } from "~/types";
 import { Folder } from "./Folder";
 import { File } from "./File";
+import { folderStructure } from "~/store";
+import { observer } from "mobx-react-lite";
 
-type ExplorerPropsT = {
-  fs: FolderStructureT;
-};
-
-export const Explorer = ({ fs }: ExplorerPropsT) => {
+export const Explorer = observer(() => {
   return (
     <div>
-      {fs.map((item) => {
+      {folderStructure.fs.map((item) => {
         if (item.type === "file") return <File name={item.name} key={item.name} />;
 
         return <Folder folder={item} key={item.name} />;
       })}
     </div>
   );
-};
+});
