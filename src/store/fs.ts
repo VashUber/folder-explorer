@@ -13,6 +13,9 @@ class FolderStructure {
 
   addToFs(node: FolderI, val: FolderI | FileI) {
     node.data.push(val);
+    node.data.sort((a, b) => {
+      return a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1;
+    });
   }
 }
 
